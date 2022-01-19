@@ -1,39 +1,38 @@
-<!-- 
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# flutter_bounce
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages). 
+[![pub_package](https://img.shields.io/pub/v/flutter_bounce)](https://pub.dev/packages/flutter_bounce)
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages). 
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
-
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+- An efficient flutter package for an **auto bounce** animation on any flutter widgets 
+- This package is an enhanced version of [bouncing_widget](https://pub.dev/packages/bouncing_widget).
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
+To use this plugin, add `bouncy_effect` as a [dependency in your pubspec.yaml file](https://flutter.dev/docs/development/packages-and-plugins/using-packages).
+
+## Demo
+
+This is how the `BouncyEffect` Widget works when wrapped around the widget. The below shows `BouncyEffect` being used:
+![](assets/scroll-bounce.gif)
+
+## Example
+
+- Import the library
 
 ```dart
-const like = 'sample';
+import 'package:flutter_bounce/flutter_bounce.dart';
 ```
 
-## Additional information
+- In order to use this package, we just need to wrap the content with the widget `BouncyEffect`.
+- **Please Note:** Always pass the duration in `milliseconds` for best result
 
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+```dart
+BouncyEffect(
+  repeat: true,
+  duration: Duration(milliseconds: 110),
+  child: YOUR_WIDGET
+)
+```
+
+
+
+
