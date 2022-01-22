@@ -12,7 +12,7 @@ To use this plugin, add `bouncy_effect` as a [dependency in your pubspec.yaml fi
 ## Demo
 
 This is how the `BouncyEffect` Widget works when wrapped around the widget. The below shows `BouncyEffect` being used:
-![](assets/bounce.gif=250x250)
+![](assets/bounce.gif)
 
 ## Example
 
